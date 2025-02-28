@@ -1,5 +1,7 @@
 package classes;
 
+import database.ConnectionDB;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -22,9 +24,9 @@ public class Cadastros {
             int linhaAfet = pstm.executeUpdate();
 
             if (linhaAfet > 1) {
-                System.out.println("Usuario cadastrado com exito");
+                System.out.println("classes.Usuario cadastrado com exito");
             } else {
-                System.out.println("Usuario não cadastrado");
+                System.out.println("classes.Usuario não cadastrado");
             }
         } catch (SQLException e) {
             System.out.println(e);

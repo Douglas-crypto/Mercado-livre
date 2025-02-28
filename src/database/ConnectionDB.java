@@ -9,8 +9,8 @@ public class ConnectionDB {
     public Connection getConnection() {
         Connection  connection = null;
         try {
-            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/MercadoFake",
-                    "postgres", "password");
+            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/mercado_livre",
+                    "postgres", "@skydiver2442!");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

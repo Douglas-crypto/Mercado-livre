@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import classes.AvaliaCao;
+import database.ConnectionDB;
 
 public class RepositorioAvalicao {
     public AvaliaCao getById(long id) {

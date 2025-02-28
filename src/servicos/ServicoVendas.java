@@ -18,8 +18,8 @@ public class ServicoVendas {
             while (resultSet.next()) {
                 System.out.println("ID: " + resultSet.getInt("id"));
                 System.out.println("ID da Venda: " + resultSet.getInt("fk_venda"));
-                System.out.println("ID do Produto: " + resultSet.getInt("fk_produto"));
-                System.out.println("ID do Estoque: " + resultSet.getInt("fk_estoque"));
+                System.out.println("ID do classes.Produto: " + resultSet.getInt("fk_produto"));
+                System.out.println("ID do classes.Estoque: " + resultSet.getInt("fk_estoque"));
                 System.out.println("Preço Unitário: " + resultSet.getBigDecimal("preco_unit"));
                 System.out.println("Quantidade: " + resultSet.getInt("quantidade"));
                 System.out.println("Subtotal: " + resultSet.getBigDecimal("subtotal"));

@@ -1,5 +1,9 @@
 package repositorios;
 
+import classes.FormasPagamento;
+import classes.TipoFormaPagamento;
+import database.ConnectionDB;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

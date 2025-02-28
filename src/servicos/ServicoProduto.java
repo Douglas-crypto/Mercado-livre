@@ -70,9 +70,9 @@ public class ServicoProduto {
             int linhaAfet = pstm.executeUpdate();
 
             if (linhaAfet > 0) {
-                System.out.println("Estoque atualizado");
+                System.out.println("classes.Estoque atualizado");
             } else {
-                System.out.println("Estoque não foi atualizado, verifique as informações");
+                System.out.println("classes.Estoque não foi atualizado, verifique as informações");
             }
         } catch (SQLException e) {
             System.out.println(e.getMessage());
@@ -94,9 +94,9 @@ public class ServicoProduto {
             int linhaAfet = pstm.executeUpdate();
 
             if (linhaAfet > 0) {
-                System.out.println("Produto atualizado");
+                System.out.println("classes.Produto atualizado");
             } else {
-                System.out.println("Produto não foi atualizado, verifique as informações");
+                System.out.println("classes.Produto não foi atualizado, verifique as informações");
             }
         } catch (SQLException e) {
             System.out.println(e.getMessage());
@@ -120,7 +120,7 @@ public class ServicoProduto {
                 System.out.println("Preço: " + resultSet.getFloat("preco"));
                 System.out.println("Usado: " + resultSet.getBoolean("usado"));
             } else {
-                System.out.println("Produto não foi encontrado.");
+                System.out.println("classes.Produto não foi encontrado.");
             }
         } catch (SQLException e) {
             System.out.println("Erro ao tentar visualizar o produto: " + e.getMessage());
@@ -139,7 +139,7 @@ public class ServicoProduto {
 
             while (resultSet.next()) {
                 System.out.println("ID da Avaliação: " + resultSet.getInt("id"));
-                System.out.println("ID do Produto: " + resultSet.getInt("fk_produto"));
+                System.out.println("ID do classes.Produto: " + resultSet.getInt("fk_produto"));
                 System.out.println("ID do Usuário: " + resultSet.getInt("fk_usuario"));
                 System.out.println("Nota: " + resultSet.getInt("nota_produto"));
                 System.out.println("Comentário: " + resultSet.getString("texto"));

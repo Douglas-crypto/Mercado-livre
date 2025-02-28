@@ -37,7 +37,7 @@ public class AvaliaCao {
 
     public void exibirInformacao() {
         System.out.println("ID: " + getId() +
-                " Produto ID: " + getFkProduto() +
+                " classes.Produto ID: " + getFkProduto() +
                 " Usuário ID: " + getFkUsuario() +
                 " Nota: " + getRating() +
                 " Comentário: " + getTexto());
