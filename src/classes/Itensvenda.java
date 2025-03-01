@@ -10,7 +10,7 @@ public class Itensvenda {
    private int quantidade;
    private double subtotal;
 
-    public Itensvenda(int id, int fk_venda, int fk_produto, int fk_estoque, double preco_unit, int quantidade, double subtotal) {
+    public ItensVenda(int id, int fk_venda, int fk_produto, int fk_estoque, double preco_unit, int quantidade, double subtotal) {
         this.id = id;
         this.fk_venda = fk_venda;
         this.fk_produto = fk_produto;
