@@ -9,7 +9,7 @@ import java.sql.SQLException;
 
 public class Cadastros {
 
-    public void adicionaUsuario(String username, String cpf_cnpj, String endereco, String email, String senha) {
+    public void adicionarUsuario(String username, String cpf_cnpj, String endereco, String email, String senha) {
         String sql = "INSERT INTO cad_usuarios (username, cpf_cnpj, endereco, email, senha) VALUES (?, ?, ?, ?, ?)";
 
         try (Connection connection = new ConnectionDB().getConnection();
