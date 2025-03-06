@@ -22,9 +22,9 @@ public class ServicoUsuario {
         try (Connection connection = new ConnectionDB().getConnection();
              PreparedStatement pstm = connection.prepareStatement(sql)) {
 
-            pstm.setString(1, nome_completo);
+            pstm.setString(1, nome_completo.toUpperCase());
             pstm.setString(2, cpf_cnpj);
-            pstm.setString(3, endereco);
+            pstm.setString(3, endereco.toUpperCase());
             pstm.setString(4, email);
             pstm.setString(5, senhaCriptografada);
 
@@ -55,7 +55,7 @@ public class ServicoUsuario {
         try (Connection connection = new ConnectionDB().getConnection();
              PreparedStatement pstm = connection.prepareStatement(sql)) {
 
-            pstm.setString(1, novoNomeCompleto);
+            pstm.setString(1, novoNomeCompleto.toUpperCase());
             pstm.setInt(2, idUsuario);
 
             int linhaAfet = pstm.executeUpdate();
