@@ -54,6 +54,11 @@ public class ServicoProduto {
     }
 
     public void editarProduto(int idProduto, String nome_produto) {
+
+         if (nome_produto == null || nome_produto.trim().isEmpty()) {
+        System.out.println("Erro: O nome do produto não pode ser nulo ou vazio.");
+        return;
+    }
         String sql = "UPDATE produto SET nome_produto = ?, WHERE id = ?";
 
         try (Connection connection = new ConnectionDB().getConnection();
